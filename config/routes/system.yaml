@@ -1,0 +1,2 @@
+## System route index moved. Imports are now handled from config/routes.yaml
+## This file is intentionally left blank to avoid duplicate imports.

@@ -1,6 +1,6 @@
 twig:
-    file_name_pattern: '*.twig'
-
-when@test:
-    twig:
-        strict_variables: true
+    default_path: '%kernel.project_dir%/templates'
+    cache: false  # Disable cache to fix template issues
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+    auto_reload: true

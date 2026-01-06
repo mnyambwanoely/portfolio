@@ -21,3 +21,10 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    # PDO session handler (stores PHP sessions in the configured DATABASE_URL)
+    session.handler.pdo:
+        class: Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler
+        arguments:
+            - '%env(resolve:DATABASE_URL)%'
+            - { db_table: sessions }

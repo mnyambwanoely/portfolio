@@ -1,0 +1,31 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Add Work Experience{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 mb-0">Add Work Experience</h1>
+        <a href="{{ path('admin_work_experience') }}" class="btn btn-secondary">Back to list</a>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-body">
+            {{ form_start(form) }}
+            {{ form_row(form.company) }}
+            {{ form_row(form.position) }}
+            {{ form_row(form.startDate) }}
+            {{ form_row(form.endDate) }}
+            {{ form_row(form.description) }}
+            {{ form_row(form.isCurrent) }}
+            {{ form_row(form.isActive) }}
+
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Create</button>
+                <a href="{{ path('admin_work_experience') }}" class="btn btn-link">Cancel</a>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

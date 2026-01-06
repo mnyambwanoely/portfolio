@@ -1,0 +1,494 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block page_title %}Dashboard Overview{% endblock %}
+
+{% block page_actions %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-end mb-3">
+    <form method="post" action="{{ path('admin_logout') }}">
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('admin_logout') }}">
+        <button type="submit" class="btn btn-danger">
+            <i class="fas fa-sign-out-alt me-1"></i> Logout
+        </button>
+    </form>
+</div>
+<div class="row">
+    <!-- Stats Cards -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-primary">
+                <i class="fas fa-project-diagram"></i>
+            </div>
+            <div class="stat-number">{{ stats.total_projects }}</div>
+            <div class="stat-label">Total Projects</div>
+            <div class="stat-change positive">
+                <i class="fas fa-check-circle me-1"></i> {{ stats.published_projects }} Published
+            </div>
+            <div class="stat-change text-secondary small">
+                <i class="fas fa-pen me-1"></i> {{ stats.draft_projects|default(0) }} Draft
+            </div>
+            <a href="{{ path('admin_projects') }}" class="btn btn-outline-primary-custom btn-sm mt-3">
+                <i class="fas fa-arrow-right me-1"></i> Manage Projects
+            </a>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-success">
+                <i class="fas fa-tools"></i>
+            </div>
+            <div class="stat-number">{{ stats.total_skills }}</div>
+            <div class="stat-label">Skills</div>
+            <div class="stat-change positive">
+                <i class="fas fa-check me-1"></i> {{ stats.active_skills }} Active
+            </div>
+            <div class="stat-change text-secondary small">
+                <i class="fas fa-ban me-1"></i> {{ stats.total_skills - stats.active_skills }} Inactive
+            </div>
+            <a href="{{ path('admin_skills') }}" class="btn btn-outline-primary-custom btn-sm mt-3">
+                <i class="fas fa-arrow-right me-1"></i> Manage Skills
+            </a>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-warning">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="stat-number">{{ stats.total_messages }}</div>
+            <div class="stat-label">Messages</div>
+            <div class="stat-change {{ stats.unread_messages > 0 ? 'negative' : 'positive' }}">
+                {% if stats.unread_messages > 0 %}
+                    <i class="fas fa-exclamation-circle me-1"></i> {{ stats.unread_messages }} Unread
+                {% else %}
+                    <i class="fas fa-check-circle me-1"></i> All Read
+                {% endif %}
+            </div>
+            <div class="stat-change text-secondary small">
+                <i class="fas fa-inbox me-1"></i> {{ stats.total_messages - stats.unread_messages }} Read
+            </div>
+            <a href="{{ path('admin_messages') }}" class="btn btn-outline-primary-custom btn-sm mt-3">
+                <i class="fas fa-arrow-right me-1"></i> View Messages
+            </a>
+        </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="stat-card">
+            <div class="stat-icon stat-icon-info">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-number">{{ stats.total_users }}</div>
+            <div class="stat-label">Users</div>
+            <div class="stat-change positive">
+                <i class="fas fa-user-shield me-1"></i> {{ stats.admin_users }} Admins
+            </div>
+            <div class="stat-change text-secondary small">
+                <i class="fas fa-user me-1"></i> {{ stats.total_users - stats.admin_users }} Regular Users
+            </div>
+            <a href="{{ path('admin_users') }}" class="btn btn-outline-primary-custom btn-sm mt-3">
+                <i class="fas fa-arrow-right me-1"></i> Manage Users
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <!-- Recent Projects -->
+    <div class="col-lg-8 mb-4">
+        <div class="card">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0"><i class="fas fa-project-diagram me-2"></i>Recent Projects</h5>
+                <a href="{{ path('admin_project_new') }}" class="btn btn-primary-custom btn-sm">
+                    <i class="fas fa-plus me-1"></i> New Project
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if recent_projects|length > 0 %}
+                                {% for project in recent_projects %}
+                                <tr>
+                                    <td>
+                                        <strong>{{ project.title|slice(0, 30) }}{% if project.title|length > 30 %}...{% endif %}</strong>
+                                        <br>
+                                        <small class="text-muted">{{ project.description|slice(0, 50) }}...</small>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-{{ project.category|default('web') == 'web' ? 'primary' : 'success' }}">
+                                            {{ project.category|default('web')|capitalize }}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        {% if project.status is defined and project.status == 'published' %}
+                                            <span class="badge bg-success">Published</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">Draft</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ project.createdAt|date('Y-m-d') }}</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm" role="group">
+                                            <a href="{{ path('admin_project_edit', {'id': project.id}) }}" 
+                                               class="btn btn-outline-primary" title="Edit">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            {% if project.status is defined %}
+                                            <form method="post" action="{{ path('admin_project_toggle_status', {'id': project.id}) }}" 
+                                                  class="d-inline" onsubmit="return confirm('Change project status?')">
+                                                <button type="submit" class="btn btn-outline-{{ project.status == 'published' ? 'warning' : 'success' }}" 
+                                                        title="{{ project.status == 'published' ? 'Set as Draft' : 'Publish' }}">
+                                                    <i class="fas fa-{{ project.status == 'published' ? 'eye-slash' : 'eye' }}"></i>
+                                                </button>
+                                            </form>
+                                            {% endif %}
+                                            <form method="post" action="{{ path('admin_project_delete', {'id': project.id}) }}" 
+                                                  class="d-inline" onsubmit="return confirm('Delete this project?')">
+                                                <input type="hidden" name="_token" value="{{ csrf_token('delete-project-' ~ project.id) }}">
+                                                <button type="submit" class="btn btn-outline-danger" title="Delete">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr>
+                                    <td colspan="5" class="text-center py-4">
+                                        <i class="fas fa-inbox fa-2x text-muted mb-3"></i>
+                                        <p class="text-muted">No projects found.</p>
+                                        <a href="{{ path('admin_project_new') }}" class="btn btn-primary-custom btn-sm">
+                                            <i class="fas fa-plus me-1"></i> Create First Project
+                                        </a>
+                                    </td>
+                                </tr>
+                            {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Quick Actions -->
+    <div class="col-lg-4 mb-4">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h5 class="mb-0"><i class="fas fa-bolt me-2"></i>Quick Actions</h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2 mb-4">
+                    <a href="{{ path('admin_project_new') }}" class="btn btn-primary-custom text-start">
+                        <i class="fas fa-plus-circle me-2"></i>Add New Project
+                    </a>
+                    <a href="{{ path('admin_skills') }}" class="btn btn-primary-custom text-start">
+                        <i class="fas fa-tools me-2"></i>Manage Skills
+                    </a>
+                    <a href="{{ path('admin_education') }}" class="btn btn-primary-custom text-start">
+                        <i class="fas fa-graduation-cap me-2"></i>Manage Education
+                    </a>
+                    <a href="{{ path('admin_messages') }}" class="btn btn-primary-custom text-start">
+                        <i class="fas fa-envelope me-2"></i>View Messages
+                        {% if stats.unread_messages > 0 %}
+                            <span class="badge bg-danger float-end">{{ stats.unread_messages }}</span>
+                        {% endif %}
+                    </a>
+                    <a href="{{ path('admin_profile') }}" class="btn btn-primary-custom text-start">
+                        <i class="fas fa-user-edit me-2"></i>Edit Profile
+                    </a>
+                </div>
+                
+                <hr>
+                
+                <h6 class="mt-3">System Status</h6>
+                <div class="mt-2">
+                    <small class="text-muted">Projects Health</small>
+                    <div class="progress mb-2" style="height: 8px;">
+                        <div class="progress-bar bg-{{ stats.total_projects > 0 and stats.published_projects > 0 ? 'success' : 'warning' }}" 
+                             style="width: {{ stats.total_projects > 0 ? (stats.published_projects / stats.total_projects * 100) : 0 }}%">
+                        </div>
+                    </div>
+                    
+                    <small class="text-muted">Skills Coverage</small>
+                    <div class="progress mb-2" style="height: 8px;">
+                        <div class="progress-bar bg-{{ stats.active_skills > 0 ? 'success' : 'warning' }}" 
+                             style="width: {{ stats.total_skills > 0 ? (stats.active_skills / stats.total_skills * 100) : 0 }}%">
+                        </div>
+                    </div>
+                    
+                    <small class="text-muted">Messages Response</small>
+                    <div class="progress mb-2" style="height: 8px;">
+                        <div class="progress-bar bg-{{ stats.total_messages > 0 and stats.unread_messages == 0 ? 'success' : 'warning' }}" 
+                             style="width: {{ stats.total_messages > 0 ? ((stats.total_messages - stats.unread_messages) / stats.total_messages * 100) : 0 }}%">
+                        </div>
+                    </div>
+                    
+                    <small class="text-muted">Admin Coverage</small>
+                    <div class="progress" style="height: 8px;">
+                        <div class="progress-bar bg-{{ stats.admin_users > 0 ? 'success' : 'danger' }}" 
+                             style="width: {{ stats.total_users > 0 ? (stats.admin_users / stats.total_users * 100) : 0 }}%">
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="my-3">
+                
+                <h6 class="mt-3">Recent Users</h6>
+                <div class="mt-2">
+                    {% if recent_users|length > 0 %}
+                        {% for user in recent_users %}
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="flex-shrink-0">
+                                <div class="avatar-sm rounded-circle bg-primary text-white d-flex align-items-center justify-content-center" 
+                                     style="width: 30px; height: 30px;">
+                                    {{ user.email|first|upper }}
+                                </div>
+                            </div>
+                            <div class="flex-grow-1 ms-2">
+                                <small class="d-block fw-bold">{{ user.email|slice(0, 20) }}{% if user.email|length > 20 %}...{% endif %}</small>
+                                <small class="text-muted">{{ user.createdAt|date('M d, H:i') }}</small>
+                            </div>
+                            <span class="badge bg-{{ 'ROLE_ADMIN' in user.roles ? 'danger' : 'info' }}">
+                                {{ 'ROLE_ADMIN' in user.roles ? 'Admin' : 'User' }}
+                            </span>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <p class="text-muted small">No users found</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <!-- Recent Messages -->
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                <h5 class="mb-0"><i class="fas fa-envelope me-2"></i>Recent Messages</h5>
+                <a href="{{ path('admin_messages') }}" class="btn btn-primary-custom btn-sm">
+                    <i class="fas fa-list me-1"></i> All Messages
+                </a>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    {% if recent_messages|length > 0 %}
+                        {% for message in recent_messages %}
+                        <div class="col-md-6 col-lg-4 mb-3">
+                            <div class="card border-{{ message.isRead ? '' : 'primary' }} h-100">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div>
+                                            <h6 class="mb-1">
+                                                {{ message.name|slice(0, 20) }}{% if message.name|length > 20 %}...{% endif %}
+                                                {% if not message.isRead %}
+                                                <span class="badge bg-primary ms-2">New</span>
+                                                {% endif %}
+                                            </h6>
+                                            <small class="text-muted">{{ message.email|slice(0, 20) }}{% if message.email|length > 20 %}...{% endif %}</small>
+                                        </div>
+                                        <small class="text-muted">{{ message.createdAt|date('M d') }}</small>
+                                    </div>
+                                    <p class="mt-2 mb-1">
+                                        <strong>{{ message.subject|slice(0, 30) }}{% if message.subject|length > 30 %}...{% endif %}</strong>
+                                    </p>
+                                    <p class="text-muted mb-2 small">{{ message.message|slice(0, 80) }}...</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <a href="{{ path('admin_message_show', {'id': message.id}) }}" 
+                                               class="btn btn-outline-primary-custom btn-sm">
+                                                <i class="fas fa-eye me-1"></i> Read
+                                            </a>
+                                            <form method="post" action="{{ path('admin_message_delete', {'id': message.id}) }}" 
+                                                  class="d-inline" onsubmit="return confirm('Delete this message?')">
+                                                <input type="hidden" name="_token" value="{{ csrf_token('delete-message-' ~ message.id) }}">
+                                                <button type="submit" class="btn btn-outline-danger btn-sm">
+                                                    <i class="fas fa-trash me-1"></i> Delete
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <span class="text-muted small">
+                                            <i class="fas fa-clock me-1"></i>
+                                            {{ message.createdAt|date('H:i') }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="col-12 text-center py-4">
+                            <i class="fas fa-envelope-open fa-2x text-muted mb-3"></i>
+                            <p class="text-muted">No messages yet.</p>
+                            <a href="{{ path('app_home') }}" class="btn btn-primary-custom btn-sm" target="_blank">
+                                <i class="fas fa-external-link-alt me-1"></i> Visit Contact Page
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Activity Overview -->
+<div class="row mt-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h5 class="mb-0"><i class="fas fa-chart-line me-2"></i>Activity Overview</h5>
+            </div>
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-3">
+                        <div class="p-3 border rounded bg-light">
+                            <h3 class="text-primary">{{ stats.total_projects }}</h3>
+                            <p class="mb-0 text-muted">Total Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="p-3 border rounded bg-light">
+                            <h3 class="text-success">{{ stats.total_skills }}</h3>
+                            <p class="mb-0 text-muted">Skills</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="p-3 border rounded bg-light">
+                            <h3 class="text-info">{{ stats.total_messages }}</h3>
+                            <p class="mb-0 text-muted">Messages</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="p-3 border rounded bg-light">
+                            <h3 class="text-warning">{{ stats.total_users }}</h3>
+                            <p class="mb-0 text-muted">Users</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Activity Log -->
+                <div class="mt-4">
+                    <h6 class="mb-3">Recent Activity</h6>
+                    <div class="list-group">
+                        {% if recent_projects|length > 0 %}
+                            {% for project in recent_projects|slice(0, 3) %}
+                            <div class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="mb-1">
+                                        <i class="fas fa-project-diagram text-primary me-2"></i>
+                                        New Project: {{ project.title|slice(0, 30) }}{% if project.title|length > 30 %}...{% endif %}
+                                    </small>
+                                    <small class="text-muted">{{ project.createdAt|date('M d, H:i') }}</small>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        {% endif %}
+                        
+                        {% if recent_messages|length > 0 %}
+                            {% for message in recent_messages|slice(0, 3) %}
+                            <div class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <small class="mb-1">
+                                        <i class="fas fa-envelope text-info me-2"></i>
+                                        New Message from {{ message.name|slice(0, 15) }}{% if message.name|length > 15 %}...{% endif %}
+                                    </small>
+                                    <small class="text-muted">{{ message.createdAt|date('M d, H:i') }}</small>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        {% endif %}
+                        
+                        {% if recent_projects|length == 0 and recent_messages|length == 0 %}
+                            <div class="list-group-item">
+                                <small class="text-muted">No recent activity</small>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+<script>
+// Mark message as read via AJAX
+document.querySelectorAll('.mark-read-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const messageId = this.getAttribute('data-id');
+        const btn = this;
+        
+        fetch('/admin/messages/' + messageId + '/toggle-read', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Update UI
+                btn.closest('.card').classList.remove('border-primary');
+                btn.remove();
+                
+                // Update badge count
+                const unreadBadges = document.querySelectorAll('.badge-notification, .badge.bg-danger');
+                unreadBadges.forEach(badge => {
+                    let count = parseInt(badge.textContent);
+                    if (count > 1) {
+                        badge.textContent = count - 1;
+                    } else {
+                        badge.remove();
+                    }
+                });
+                
+                // Show success message
+                const alert = document.createElement('div');
+                alert.className = 'alert alert-success alert-dismissible fade show position-fixed top-0 end-0 m-3';
+                alert.style.zIndex = '9999';
+                alert.innerHTML = `
+                    <i class="fas fa-check-circle me-2"></i> Message marked as read
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                document.body.appendChild(alert);
+                
+                setTimeout(() => {
+                    alert.remove();
+                }, 3000);
+            }
+        });
+    });
+});
+
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
+// Auto refresh dashboard every 2 minutes
+setTimeout(function() {
+    window.location.reload();
+}, 120000);
+</script>
+{% endblock %}

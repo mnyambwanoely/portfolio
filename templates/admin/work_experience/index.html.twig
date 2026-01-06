@@ -1,0 +1,59 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Work Experience{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 mb-0">Work Experience</h1>
+        <a href="{{ path('admin_work_experience_new') }}" class="btn btn-primary">Add New</a>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-body">
+            {% if workExperience is empty %}
+                <p>No work experience entries added yet.</p>
+            {% else %}
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Position</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Current</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for w in workExperience %}
+                            <tr>
+                                <td>{{ w.company }}</td>
+                                <td>{{ w.position }}</td>
+                                <td>{{ w.startDate ? w.startDate|date('Y-m') : '-' }}</td>
+                                <td>{{ w.endDate ? w.endDate|date('Y-m') : '-' }}</td>
+                                <td>{{ w.isCurrent ? 'Yes' : 'No' }}</td>
+                                <td>
+                                    {% if w.isActive %}
+                                        <span class="badge bg-success">Active</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary">Inactive</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <a href="{{ path('admin_work_experience_edit', {'id': w.id}) }}" class="btn btn-sm btn-outline-primary">Edit</a>
+                                    <form method="post" action="{{ path('admin_work_experience_delete', {'id': w.id}) }}" style="display:inline-block;" onsubmit="return confirm('Are you sure?');">
+                                        <input type="hidden" name="_token" value="{{ csrf_token('delete-work-' ~ w.id) }}">
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

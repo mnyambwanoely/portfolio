@@ -1,0 +1,60 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}My Profile{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="admin-card p-4 text-center">
+                <div class="user-avatar mb-3" style="width:100px;height:100px;font-size:32px;background-color: {{ user.avatarColor ?? '#3498db' }}; margin:0 auto;">
+                    {{ user.initials ?? (user.email|first|upper) }}
+                </div>
+                <h5 class="mt-2">{{ user.fullName ?? 'Admin User' }}</h5>
+                <p class="text-muted">{{ user.email }}</p>
+                <p>
+                    <span class="badge badge-admin">{{ 'ROLE_ADMIN' in user.roles ? 'Admin' : (user.roles|join(', ')) }}</span>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="admin-card p-4">
+                <h5>Profile Details</h5>
+                <dl class="row mt-3">
+                    <dt class="col-sm-4">Email</dt>
+                    <dd class="col-sm-8">{{ user.email }}</dd>
+
+                    <dt class="col-sm-4">Full Name</dt>
+                    <dd class="col-sm-8">{{ user.fullName ?? 'N/A' }}</dd>
+
+                    <dt class="col-sm-4">Active</dt>
+                    <dd class="col-sm-8">{{ user.isActive ? 'Yes' : 'No' }}</dd>
+
+                    {% if user.createdAt is defined and user.createdAt %}
+                        <dt class="col-sm-4">Joined</dt>
+                        <dd class="col-sm-8">{{ user.createdAt|date('Y-m-d H:i') }}</dd>
+                    {% endif %}
+                </dl>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <a href="{{ path('admin_profile_edit') }}" class="btn btn-admin-primary">Edit Profile</a>
+                        <a href="#" class="btn btn-admin-secondary">Change Password</a>
+                    </div>
+                    <div>
+                        <form method="post" action="{{ path('admin_logout') }}">
+                            <input type="hidden" name="_csrf_token" value="{{ csrf_token('admin_logout') }}">
+                            <button type="submit" class="btn btn-danger">Logout</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="mt-2 text-muted small">
+                    {% if not user.fullName %}
+                        No full name set — click <a href="{{ path('admin_profile_edit') }}">Edit Profile</a> to update your details.
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

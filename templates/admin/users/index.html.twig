@@ -1,0 +1,37 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Users{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 mb-0">Users</h1>
+        <a href="{{ path('admin_dashboard') }}" class="btn btn-secondary">Back to dashboard</a>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-body">
+            {% if users|length > 0 %}
+                <div class="list-group">
+                    {% for user in users %}
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong>{{ user.email }}</strong>
+                                <div class="small text-muted">Roles: {{ user.roles|join(', ') }}</div>
+                            </div>
+                            <div>
+                                <small class="text-muted">{{ user.createdAt|date('Y-m-d') }}</small>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="text-center py-5">
+                    <i class="fas fa-users fa-3x text-muted mb-3"></i>
+                    <h5>No users found</h5>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

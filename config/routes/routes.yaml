@@ -1,0 +1,82 @@
+# Admin Routes
+admin_login:
+    path: /admin/login
+    controller: App\Controller\Admin\SecurityController::login
+    methods: [GET, POST]
+
+admin_logout:
+    path: /admin/logout
+    controller: App\Controller\Admin\SecurityController::logout
+    methods: [POST]  # Use POST to require CSRF token for logout
+
+admin_dashboard:
+    path: /admin
+    controller: App\Controller\Admin\DashboardController::index
+
+admin_profile_edit:
+    path: /admin/profile/edit
+    controller: App\Controller\Admin\DashboardController::editProfile
+    methods: [GET, POST]
+
+# Personal Details
+admin_personal_details:
+    path: /admin/personal-details
+    controller: App\Controller\Admin\DashboardController::personalDetails
+    methods: [GET]
+
+admin_personal_details_new:
+    path: /admin/personal-details/new
+    controller: App\Controller\Admin\DashboardController::newPersonalDetails
+    methods: [GET, POST]
+
+admin_personal_details_edit:
+    path: /admin/personal-details/{id}/edit
+    controller: App\Controller\Admin\DashboardController::editPersonalDetails
+    methods: [GET, POST]
+
+admin_personal_details_delete:
+    path: /admin/personal-details/{id}/delete
+    controller: App\Controller\Admin\DashboardController::deletePersonalDetails
+    methods: [POST]
+
+# Education
+admin_education:
+    path: /admin/education
+    controller: App\Controller\Admin\DashboardController::education
+    methods: [GET]
+
+admin_education_new:
+    path: /admin/education/new
+    controller: App\Controller\Admin\DashboardController::newEducation
+    methods: [GET, POST]
+
+admin_education_edit:
+    path: /admin/education/{id}/edit
+    controller: App\Controller\Admin\DashboardController::editEducation
+    methods: [GET, POST]
+
+admin_education_delete:
+    path: /admin/education/{id}/delete
+    controller: App\Controller\Admin\DashboardController::deleteEducation
+    methods: [POST]
+
+# Work Experience
+admin_work_experience:
+    path: /admin/work-experience
+    controller: App\Controller\Admin\DashboardController::workExperience
+    methods: [GET]
+
+admin_work_experience_new:
+    path: /admin/work-experience/new
+    controller: App\Controller\Admin\DashboardController::newWorkExperience
+    methods: [GET, POST]
+
+admin_work_experience_edit:
+    path: /admin/work-experience/{id}/edit
+    controller: App\Controller\Admin\DashboardController::editWorkExperience
+    methods: [GET, POST]
+
+admin_work_experience_delete:
+    path: /admin/work-experience/{id}/delete
+    controller: App\Controller\Admin\DashboardController::deleteWorkExperience
+    methods: [POST]

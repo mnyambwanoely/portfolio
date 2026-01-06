@@ -1,0 +1,409 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact Me - Noely Bernard Mnyambwa{% endblock %}
+
+{% block body %}
+<section class="contact-section" style="padding-top: 150px;">
+    <div class="container">
+        <!-- Page Header -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold" style="color: var(--primary-color);">Get In <span style="color: var(--accent-color);">Touch</span></h1>
+            <p class="lead text-muted">Have a project in mind or want to discuss opportunities? Let's connect!</p>
+        </div>
+
+        <div class="row">
+            <!-- Contact Form Section -->
+            <div class="col-lg-8 mb-5">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h3 class="fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class="fas fa-envelope me-2"></i>Send Me a Message
+                        </h3>
+                        
+                        <!-- Flash Messages -->
+                        {% for message in app.flashes('success') %}
+                        <div class="alert alert-success alert-dismissible fade show mb-4 border-0 shadow-sm" role="alert" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white;">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle fa-2x me-3"></i>
+                                <div>
+                                    <strong>Ujumbe Umetumwa!</strong><br>
+                                    {{ message }}
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+                        </div>
+                        {% endfor %}
+                        
+                        {% for message in app.flashes('error') %}
+                        <div class="alert alert-danger alert-dismissible fade show mb-4 border-0 shadow-sm" role="alert" style="background: linear-gradient(135deg, #dc3545 0%, #fd7e14 100%); color: white;">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-exclamation-triangle fa-2x me-3"></i>
+                                <div>
+                                    <strong>Tatizo!</strong><br>
+                                    {{ message }}
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert"></button>
+                        </div>
+                        {% endfor %}
+                        
+                        {{ form_start(form, {'attr': {'class': 'needs-validation', 'novalidate': 'novalidate'}}) }}
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                {{ form_label(form.name) }}
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light">
+                                        <i class="fas fa-user" style="color: var(--primary-color);"></i>
+                                    </span>
+                                    {{ form_widget(form.name, {'attr': {'class': 'form-control form-control-lg'}}) }}
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                                {{ form_errors(form.name) }}
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                {{ form_label(form.email) }}
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light">
+                                        <i class="fas fa-envelope" style="color: var(--primary-color);"></i>
+                                    </span>
+                                    {{ form_widget(form.email, {'attr': {'class': 'form-control form-control-lg'}}) }}
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                                {{ form_errors(form.email) }}
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            {{ form_label(form.subject) }}
+                            <div class="input-group">
+                                <span class="input-group-text bg-light">
+                                    <i class="fas fa-comment" style="color: var(--primary-color);"></i>
+                                </span>
+                                {{ form_widget(form.subject, {'attr': {'class': 'form-control form-control-lg'}}) }}
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter a subject.
+                            </div>
+                            {{ form_errors(form.subject) }}
+                        </div>
+                        
+                        <div class="mb-4">
+                            {{ form_label(form.message) }}
+                            <div class="input-group">
+                                <span class="input-group-text bg-light align-items-start pt-3">
+                                    <i class="fas fa-pencil-alt" style="color: var(--primary-color);"></i>
+                                </span>
+                                {{ form_widget(form.message, {'attr': {
+                                    'class': 'form-control form-control-lg',
+                                    'rows': 6,
+                                    'style': 'resize: none;'
+                                }}) }}
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter your message.
+                            </div>
+                            {{ form_errors(form.message) }}
+                        </div>
+                        
+                        <div class="text-center mt-4">
+                            {{ form_widget(form.send, {'attr': {
+                                'class': 'btn btn-primary-custom btn-lg px-5 py-3'
+                            }}) }}
+                        </div>
+                        
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Information Sidebar -->
+            <div class="col-lg-4">
+                <!-- Contact Card -->
+                <div class="card border-0 shadow-lg mb-4">
+                    <div class="card-body p-5">
+                        <h3 class="fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class="fas fa-info-circle me-2"></i>Contact Information
+                        </h3>
+                        
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="contact-icon me-3">
+                                    <div class="rounded-circle bg-primary p-3">
+                                        <i class="fas fa-envelope text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold" style="color: var(--primary-color);">Email Address</h5>
+                                    <p class="mb-1">mnyambwanoel123@gmail.com</p>
+                                    <small class="text-muted">I usually respond within 24 hours</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="contact-icon me-3">
+                                    <div class="rounded-circle bg-success p-3">
+                                        <i class="fas fa-phone text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold" style="color: var(--primary-color);">Phone Numbers</h5>
+                                    <p class="mb-1">+255 673 340 832</p>
+                                    <p class="mb-1">+255 789 256 398</p>
+                                    <small class="text-muted">Available Mon-Fri, 8AM-6PM</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex align-items-start">
+                                <div class="contact-icon me-3">
+                                    <div class="rounded-circle bg-warning p-3">
+                                        <i class="fas fa-map-marker-alt text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold" style="color: var(--primary-color);">Location</h5>
+                                    <p class="mb-1">Dar es Salaam, Tanzania</p>
+                                    <small class="text-muted">Open to remote work opportunities</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quick Links Card -->
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h3 class="fw-bold mb-4" style="color: var(--primary-color);">
+                            <i class="fas fa-bolt me-2"></i>Quick Links
+                        </h3>
+                        
+                        <div class="list-group list-group-flush">
+                            <a href="{{ path('app_cv') }}" class="list-group-item list-group-item-action border-0 py-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-file-alt me-3 fs-5" style="color: var(--accent-color);"></i>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">View My CV</h6>
+                                        <small class="text-muted">Check my professional background</small>
+                                    </div>
+                                    <i class="fas fa-arrow-right ms-auto"></i>
+                                </div>
+                            </a>
+                            
+                            <a href="{{ path('app_projects') }}" class="list-group-item list-group-item-action border-0 py-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-briefcase me-3 fs-5" style="color: var(--accent-color);"></i>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">My Projects</h6>
+                                        <small class="text-muted">See my latest work</small>
+                                    </div>
+                                    <i class="fas fa-arrow-right ms-auto"></i>
+                                </div>
+                            </a>
+                            
+                            <a href="{{ path('app_about') }}" class="list-group-item list-group-item-action border-0 py-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-user me-3 fs-5" style="color: var(--accent-color);"></i>
+                                    <div>
+                                        <h6 class="mb-1 fw-bold">About Me</h6>
+                                        <small class="text-muted">Learn more about my skills</small>
+                                    </div>
+                                    <i class="fas fa-arrow-right ms-auto"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h3 class="fw-bold mb-4 text-center" style="color: var(--primary-color);">
+                            <i class="fas fa-question-circle me-2"></i>Frequently Asked Questions
+                        </h3>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <div class="accordion" id="faqAccordion1">
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                                <strong>How soon can I expect a response?</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                            <div class="accordion-body">
+                                                I typically respond to all messages within 24 hours during business days. For urgent matters, please use the phone numbers provided.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                                <strong>Do you offer freelance services?</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1">
+                                            <div class="accordion-body">
+                                                Yes, I'm available for freelance projects in web development, networking solutions, and IT support. Let's discuss your project requirements.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <div class="accordion" id="faqAccordion2">
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                                <strong>What types of projects do you accept?</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                            <div class="accordion-body">
+                                                I specialize in web applications, networking infrastructure, IT support systems, and custom software solutions. Feel free to reach out with your specific needs.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item border-0 mb-3">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                                <strong>Do you work remotely?</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion2">
+                                            <div class="accordion-body">
+                                                Absolutely! I'm experienced in remote collaboration and can work with teams across different time zones using modern collaboration tools.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .form-control-lg {
+        padding: 1rem 1rem;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    .form-control-lg:focus {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 0.25rem rgba(26, 188, 156, 0.25);
+    }
+    
+    .input-group-text {
+        border: 1px solid #dee2e6;
+        border-right: none;
+        border-radius: 8px 0 0 8px;
+    }
+    
+    /* Contact Info Icons */
+    .contact-icon .rounded-circle {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact-info-item {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .contact-info-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    /* List Group Styling */
+    .list-group-item {
+        transition: all 0.3s ease;
+        border-radius: 8px !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    .list-group-item:hover {
+        background-color: rgba(44, 62, 80, 0.05);
+        transform: translateX(5px);
+    }
+    
+    /* Accordion Styling */
+    .accordion-button {
+        background-color: #f8f9fa;
+        border-radius: 8px !important;
+        font-weight: 600;
+        color: var(--primary-color);
+    }
+    
+    .accordion-button:not(.collapsed) {
+        background-color: var(--accent-color);
+        color: white;
+        box-shadow: none;
+    }
+    
+    .accordion-button:focus {
+        border-color: var(--accent-color);
+        box-shadow: 0 0 0 0.25rem rgba(26, 188, 156, 0.25);
+    }
+    
+    .accordion-body {
+        background-color: #f8f9fa;
+        border-radius: 0 0 8px 8px;
+    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Form validation
+    const forms = document.querySelectorAll('.needs-validation');
+    
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            
+            form.classList.add('was-validated');
+        }, false);
+    });
+    
+    // Add animation to form inputs on focus
+    const inputs = document.querySelectorAll('.form-control-lg');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.style.transform = 'translateY(-2px)';
+        });
+        
+        input.addEventListener('blur', function() {
+            this.parentElement.style.transform = 'translateY(0)';
+        });
+    });
+});
+</script>
+{% endblock %}

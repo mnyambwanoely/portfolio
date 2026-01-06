@@ -1,0 +1,51 @@
+{% extends 'admin/base.html.twig' %}
+
+{% block title %}Education{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="h3 mb-0">Education</h1>
+        <a href="{{ path('admin_education_new') }}" class="btn btn-primary">Add New</a>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-body">
+            {% if educations is empty %}
+                <p>No education entries added yet.</p>
+            {% else %}
+                <table class="table table-striped data-table">
+                    <thead>
+                        <tr>
+                            <th>School</th>
+                            <th>Degree</th>
+                            <th>Field</th>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for e in educations %}
+                            <tr>
+                                <td>{{ e.school }}</td>
+                                <td>{{ e.degree }}</td>
+                                <td>{{ e.fieldOfStudy }}</td>
+                                <td>{{ e.startDate ? e.startDate|date('Y-m') : '-' }}</td>
+                                <td>{{ e.endDate ? e.endDate|date('Y-m') : '-' }}</td>
+                                <td>
+                                    <a href="{{ path('admin_education_edit', {'id': e.id}) }}" class="btn btn-sm btn-outline-primary">Edit</a>
+                                    <form method="post" action="{{ path('admin_education_delete', {'id': e.id}) }}" style="display:inline-block;" onsubmit="return confirm('Are you sure?');">
+                                        <input type="hidden" name="_token" value="{{ csrf_token('delete-education-' ~ e.id) }}">
+                                        <button class="btn btn-sm btn-danger">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

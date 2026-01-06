@@ -1,0 +1,20 @@
+# config/routes/framework.yaml
+app_login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+    methods: [GET, POST]
+
+app_logout:
+    path: /logout
+    controller: App\Controller\SecurityController::logout
+    methods: [GET]
+
+app_home:
+    path: /
+    controller: App\Controller\HomeController::index
+    methods: [GET]
+
+admin_dashboard:
+    path: /admin
+    controller: App\Controller\Admin\DashboardController::dashboard
+    methods: [GET]

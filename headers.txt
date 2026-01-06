@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 30 Dec 2025 13:45:49 GMT
+Expires: Tue, 30 Dec 2025 13:45:49 GMT
+Set-Cookie: admin_deauth_profile_token=095f84; path=/; httponly; samesite=lax
+Set-Cookie: admin_auth_profile_token=deleted; expires=Mon, 30 Dec 2024 13:45:48 GMT; Max-Age=0; path=/; httponly
+X-Debug-Token: 095f84
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/095f84
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Transfer-Encoding: chunked
+

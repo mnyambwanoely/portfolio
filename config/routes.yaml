@@ -1,11 +1,175 @@
-# yaml-language-server: $schema=../vendor/symfony/routing/Loader/schema/routing.schema.json
+imports:
+    resource: 'routes/system/*.yaml'
+    type: glob
 
-# This file is the entry point to configure the routes of your app.
-# Methods with the #[Route] attribute are automatically imported.
-# See also https://symfony.com/doc/current/routing.html
+# Main portfolio routes
+app_home:
+    path: /
+    controller: App\Controller\PortfolioController::home
 
-# To list all registered routes, run the following command:
-#   bin/console debug:router
+app_about:
+    path: /about
+    controller: App\Controller\PortfolioController::about
 
-controllers:
-    resource: routing.controllers
+app_projects:
+    path: /projects
+    controller: App\Controller\PortfolioController::projects
+
+app_contact:
+    path: /contact
+    controller: App\Controller\PortfolioController::contact
+
+app_cv:
+    path: /cv
+    controller: App\Controller\PortfolioController::cv
+
+app_project_detail:
+    path: /project/{id}
+    controller: App\Controller\PortfolioController::projectDetail
+    requirements:
+        id: '\d+'
+
+# CV Download Route
+download_cv:
+    path: /download-cv
+    controller: App\Controller\PortfolioController::downloadCv
+
+# Debug route (remove in production)
+app_debug:
+    path: /debug
+    controller: App\Controller\PortfolioController::debug
+
+# Admin Authentication Routes
+admin_login:
+    path: /admin/login
+    controller: App\Controller\Admin\SecurityController::login
+    methods: [GET, POST]
+
+admin_logout:
+    path: /admin/logout
+    controller: App\Controller\Admin\SecurityController::logout
+
+admin_change_animation:
+    path: /admin/change-animation/{type}
+    controller: App\Controller\Admin\SecurityController::changeAnimation
+    methods: [GET, POST]
+
+# Admin Dashboard Routes
+admin_dashboard:
+    path: /admin
+    controller: App\Controller\Admin\DashboardController::dashboard
+
+# Admin Projects Management
+admin_projects:
+    path: /admin/projects
+    controller: App\Controller\Admin\DashboardController::projects
+    methods: [GET]
+
+admin_project_new:
+    path: /admin/projects/new
+    controller: App\Controller\Admin\DashboardController::newProject
+    methods: [GET, POST]
+
+admin_project_edit:
+    path: /admin/projects/{id}/edit
+    controller: App\Controller\Admin\DashboardController::editProject
+    methods: [GET, POST]
+    requirements:
+        id: '\d+'
+
+admin_project_delete:
+    path: /admin/projects/{id}/delete
+    controller: App\Controller\Admin\DashboardController::deleteProject
+    methods: [POST]
+    requirements:
+        id: '\d+'
+
+# Admin Skills Management
+admin_skills:
+    path: /admin/skills
+    controller: App\Controller\Admin\DashboardController::skills
+    methods: [GET]
+
+admin_skill_new:
+    path: /admin/skills/new
+    controller: App\Controller\Admin\DashboardController::newSkill
+    methods: [GET, POST]
+
+admin_skill_edit:
+    path: /admin/skills/{id}/edit
+    controller: App\Controller\Admin\DashboardController::editSkill
+    methods: [GET, POST]
+    requirements:
+        id: '\d+'
+
+admin_skill_delete:
+    path: /admin/skills/{id}/delete
+    controller: App\Controller\Admin\DashboardController::deleteSkill
+    methods: [POST]
+    requirements:
+        id: '\d+'
+
+# Admin Messages Management
+admin_messages:
+    path: /admin/messages
+    controller: App\Controller\Admin\DashboardController::messages
+    methods: [GET]
+
+admin_message_show:
+    path: /admin/messages/{id}
+    controller: App\Controller\Admin\DashboardController::showMessage
+    methods: [GET]
+    requirements:
+        id: '.+'
+
+admin_message_delete:
+    path: /admin/messages/{id}/delete
+    controller: App\Controller\Admin\DashboardController::deleteMessage
+    methods: [POST]
+    requirements:
+        id: '.+'
+
+# Admin References Management
+admin_references:
+    path: /admin/references
+    controller: App\Controller\Admin\DashboardController::references
+    methods: [GET]
+
+admin_reference_new:
+    path: /admin/references/new
+    controller: App\Controller\Admin\DashboardController::newReference
+    methods: [GET, POST]
+
+admin_reference_edit:
+    path: /admin/references/{id}/edit
+    controller: App\Controller\Admin\DashboardController::editReference
+    methods: [GET, POST]
+    requirements:
+        id: '\d+'
+
+admin_reference_delete:
+    path: /admin/references/{id}/delete
+    controller: App\Controller\Admin\DashboardController::deleteReference
+    methods: [POST]
+    requirements:
+        id: '\d+'
+
+# Admin Profile
+admin_profile:
+    path: /admin/profile
+    controller: App\Controller\Admin\DashboardController::profile
+    methods: [GET, POST]
+
+# API Routes (if needed)
+api_messages:
+    path: /api/messages
+    controller: App\Controller\PortfolioController::apiMessages
+    methods: [GET]
+
+# Redirect for admin dashboard alternative path
+admin_dashboard_alt:
+    path: /admin/dashboard
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::redirectAction
+    defaults:
+        route: admin_dashboard
+        permanent: true

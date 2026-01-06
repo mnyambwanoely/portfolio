@@ -1,3 +1,5 @@
+# Moved to config/routes/system/web_profiler.yaml
+# See config/routes/system.yaml which imports all system route files
 when@dev:
     web_profiler_wdt:
         resource: '@WebProfilerBundle/Resources/config/routing/wdt.php'

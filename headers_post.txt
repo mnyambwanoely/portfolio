@@ -1,0 +1,666 @@
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:42 GMT
+Expires: Tue, 30 Dec 2025 13:28:42 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22465e03%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+Set-Cookie: admin_deauth_profile_token=465e03; path=/; httponly; samesite=lax
+Set-Cookie: admin_auth_profile_token=deleted; expires=Mon, 30 Dec 2024 13:28:41 GMT; Max-Age=0; path=/; httponly
+Set-Cookie: PHPSESSID=aovbkoce8pmg0debfp1qo022ph; path=/; httponly; samesite=lax
+X-Debug-Token: 465e03
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/465e03
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:43 GMT
+Expires: Tue, 30 Dec 2025 13:28:43 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22ca3431%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: ca3431
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/ca3431
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:44 GMT
+Expires: Tue, 30 Dec 2025 13:28:44 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%221e24bc%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 1e24bc
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/1e24bc
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:45 GMT
+Expires: Tue, 30 Dec 2025 13:28:45 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22ed437e%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: ed437e
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/ed437e
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:45 GMT
+Expires: Tue, 30 Dec 2025 13:28:45 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22d18839%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: d18839
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/d18839
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:46 GMT
+Expires: Tue, 30 Dec 2025 13:28:46 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22145584%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 145584
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/145584
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:46 GMT
+Expires: Tue, 30 Dec 2025 13:28:46 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22d20221%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: d20221
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/d20221
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:47 GMT
+Expires: Tue, 30 Dec 2025 13:28:47 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%222ddda0%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 2ddda0
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/2ddda0
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:47 GMT
+Expires: Tue, 30 Dec 2025 13:28:47 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22990e99%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 990e99
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/990e99
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:48 GMT
+Expires: Tue, 30 Dec 2025 13:28:48 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22ac0342%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: ac0342
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/ac0342
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:48 GMT
+Expires: Tue, 30 Dec 2025 13:28:48 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22b91ebd%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: b91ebd
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/b91ebd
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:49 GMT
+Expires: Tue, 30 Dec 2025 13:28:49 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%2295daf7%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 95daf7
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/95daf7
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:49 GMT
+Expires: Tue, 30 Dec 2025 13:28:49 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22c6879f%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: c6879f
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/c6879f
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:50 GMT
+Expires: Tue, 30 Dec 2025 13:28:50 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%222975da%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 2975da
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/2975da
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:50 GMT
+Expires: Tue, 30 Dec 2025 13:28:50 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22a5844d%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: a5844d
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/a5844d
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:51 GMT
+Expires: Tue, 30 Dec 2025 13:28:51 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22e8c912%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: e8c912
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/e8c912
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:51 GMT
+Expires: Tue, 30 Dec 2025 13:28:52 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22474e0e%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 474e0e
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/474e0e
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:52 GMT
+Expires: Tue, 30 Dec 2025 13:28:52 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22832af7%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 832af7
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/832af7
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:53 GMT
+Expires: Tue, 30 Dec 2025 13:28:53 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22273abc%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 273abc
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/273abc
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:53 GMT
+Expires: Tue, 30 Dec 2025 13:28:53 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22dc1e01%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: dc1e01
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/dc1e01
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:54 GMT
+Expires: Tue, 30 Dec 2025 13:28:54 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%223c5398%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 3c5398
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/3c5398
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:54 GMT
+Expires: Tue, 30 Dec 2025 13:28:54 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22f86ac6%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: f86ac6
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/f86ac6
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:55 GMT
+Expires: Tue, 30 Dec 2025 13:28:55 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%223a8c1a%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 3a8c1a
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/3a8c1a
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:55 GMT
+Expires: Tue, 30 Dec 2025 13:28:55 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22017d5a%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 017d5a
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/017d5a
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:56 GMT
+Expires: Tue, 30 Dec 2025 13:28:56 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%225652c6%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 5652c6
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/5652c6
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:56 GMT
+Expires: Tue, 30 Dec 2025 13:28:56 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%227e10e9%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 7e10e9
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/7e10e9
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:57 GMT
+Expires: Tue, 30 Dec 2025 13:28:57 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22413c7f%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 413c7f
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/413c7f
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:57 GMT
+Expires: Tue, 30 Dec 2025 13:28:57 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22424151%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 424151
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/424151
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:58 GMT
+Expires: Tue, 30 Dec 2025 13:28:58 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%221fb593%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 1fb593
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/1fb593
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:58 GMT
+Expires: Tue, 30 Dec 2025 13:28:58 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%2231b9e0%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 31b9e0
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/31b9e0
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:59 GMT
+Expires: Tue, 30 Dec 2025 13:28:59 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22865cf6%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 865cf6
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/865cf6
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:28:59 GMT
+Expires: Tue, 30 Dec 2025 13:28:59 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22e57fe3%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: e57fe3
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/e57fe3
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:00 GMT
+Expires: Tue, 30 Dec 2025 13:29:00 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22986b00%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 986b00
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/986b00
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:01 GMT
+Expires: Tue, 30 Dec 2025 13:29:01 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22f3ba1d%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: f3ba1d
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/f3ba1d
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:01 GMT
+Expires: Tue, 30 Dec 2025 13:29:01 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22338322%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 338322
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/338322
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:02 GMT
+Expires: Tue, 30 Dec 2025 13:29:02 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22e138bd%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: e138bd
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/e138bd
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:02 GMT
+Expires: Tue, 30 Dec 2025 13:29:02 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22d5c43c%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: d5c43c
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/d5c43c
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:03 GMT
+Expires: Tue, 30 Dec 2025 13:29:03 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%225d1639%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 5d1639
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/5d1639
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:03 GMT
+Expires: Tue, 30 Dec 2025 13:29:03 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22b1494c%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: b1494c
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/b1494c
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:04 GMT
+Expires: Tue, 30 Dec 2025 13:29:04 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%222a82e7%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 2a82e7
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/2a82e7
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:05 GMT
+Expires: Tue, 30 Dec 2025 13:29:05 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%220bb1cf%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 0bb1cf
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/0bb1cf
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:05 GMT
+Expires: Tue, 30 Dec 2025 13:29:05 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22935602%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 935602
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/935602
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:06 GMT
+Expires: Tue, 30 Dec 2025 13:29:06 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22bb8e20%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: bb8e20
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/bb8e20
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:06 GMT
+Expires: Tue, 30 Dec 2025 13:29:06 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%229fc25f%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 9fc25f
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/9fc25f
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:07 GMT
+Expires: Tue, 30 Dec 2025 13:29:07 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%2237c96d%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 37c96d
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/37c96d
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:08 GMT
+Expires: Tue, 30 Dec 2025 13:29:08 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%222f33ed%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 2f33ed
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/2f33ed
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:08 GMT
+Expires: Tue, 30 Dec 2025 13:29:08 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22ed1785%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: ed1785
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/ed1785
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:09 GMT
+Expires: Tue, 30 Dec 2025 13:29:09 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22e3027d%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: e3027d
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/e3027d
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:09 GMT
+Expires: Tue, 30 Dec 2025 13:29:09 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22fa37a8%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: fa37a8
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/fa37a8
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:10 GMT
+Expires: Tue, 30 Dec 2025 13:29:10 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%220c2428%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: 0c2428
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/0c2428
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+
+HTTP/1.1 302 Found
+Cache-Control: max-age=0, must-revalidate, private
+Content-Type: text/html; charset=utf-8
+Date: Tue, 30 Dec 2025 13:29:10 GMT
+Expires: Tue, 30 Dec 2025 13:29:10 GMT
+Location: /admin/login
+Set-Cookie: sf_redirect=%7B%22token%22%3A%22e114ab%22%2C%22route%22%3A%22admin_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAdmin%5C%5CSecurityController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CINFORMATIC%20BMW%5C%5Cmnyambwa%5C%5Csrc%5C%5CAdmin%5C%5CSecurityController.php%22%2C%22line%22%3A17%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; httponly; samesite=lax
+X-Debug-Token: e114ab
+X-Debug-Token-Link: http://127.0.0.1:8000/_profiler/e114ab
+X-Powered-By: PHP/8.2.12
+X-Robots-Tag: noindex
+Content-Length: 294
+

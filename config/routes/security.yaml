@@ -1,3 +1,5 @@
+# Moved to config/routes/system/security.yaml
+# See config/routes/system.yaml which imports all system route files
 _security_logout:
     resource: security.route_loader.logout
     type: service

@@ -1,0 +1,1 @@
+"❌ Error creating tables: " . $db- . "\n";
