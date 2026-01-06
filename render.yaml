@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: portfolio
+    env: php
+    plan: free
+    buildCommand: composer install && php bin/console assets:install public
+    startCommand: php -S 0.0.0.0:8000 -t public
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "0"
+      - key: DATABASE_URL
+        value: ${DATABASE_URL}
+    routes:
+      - path: /
+        matchType: prefix
